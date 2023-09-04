@@ -2,7 +2,7 @@
 ```cypess
   // describe('Login test', ()=>{
 //     beforeEach( ()=>{
-//      cy.visit('https://portal-test.greenzonetechnologies.com.ng/')
+//      cy.visit('https://')
 //     })
 
 //     it('login with invalid email', ()=>{
@@ -25,13 +25,13 @@
 //      cy.get('.m-b-10').click()
 
 //      cy.contains('Human').click
-//      cy.visit('https://training-test.greenzonetechnologies.com.ng/training-manager')
+//      cy.visit('https://')
 
 //     })
 
     //  it('change password', ()=>{
     //    cy.contains('Change password').click()
-    //    cy.get('[placeholder=Email]').type('o.onwubolu@greenzonetechnologies.com.ng')
+    //    cy.get('[placeholder=Email]').type('')
     //    cy.contains('Reset Password').click()
     //})
 
@@ -44,7 +44,7 @@
 describe('Login page', () => {
   it('Logs in successfully', () => {
     // Visit the login page
-    cy.visit('https://portal-test.greenzonetechnologies.com.ng/');
+    cy.visit('https://');
 
     // Fill in the email and password fields
     cy.get('input[name=email]').type('email');
@@ -58,7 +58,7 @@ describe('Login page', () => {
 
   it('Shows error message with invalid credentials', () => {
     // Visit the login page
-    cy.visit('https://portal-test.greenzonetechnologies.com.ng/');
+    cy.visit('https://');
 
     // Fill in invalid email and password fields
     cy.get('input[name=email]').type('invalid@example.com');
